@@ -42,9 +42,9 @@ Here is an example of simple sentence structures.
 - This morning, I saw the raven. → [Time] [Subject] [Object] [Verb].
 - Are you going? → [Subject] [Verb]?
 - Did you eat the food? → [Object] [Verb]?
- -The raven is looking at the garden. → [Subject] [Verb] [Location].
+- The raven is looking at the garden. → [Subject] [Verb] [Location].
 - The raven is in the garden, and it is looking at the flowers. → [Location] [Subject] [Verb], [Object] [Verb].
- -I saw the raven because it was loud. → [Time] [Subject] [Object] [Verb] [Reason] [Subject] [Verb].
+- I saw the raven because it was loud. → [Time] [Subject] [Object] [Verb] [Reason] [Subject] [Verb].
 
 ### Clues and Considerations:
 - Try and provide a non-nested bulleted list
