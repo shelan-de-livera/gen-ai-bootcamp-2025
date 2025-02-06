@@ -13,6 +13,7 @@ Beginner, JLPT5
 - Provide words in their dictionary form, the student needs to figure out conjugations and tenses.
 - Provide a possible sentence structure.
 - Do not use Romaji when showing Japanese except in the table of vocabulary. 
+- When the student makes attempt, interpet their reading so they can see what that actually said.
 
 ## Formatting Instructions:
 
@@ -25,6 +26,8 @@ The formatted output will generally contain three parts:
 - The table should only include, verbs, nouns, adverbs, adjectives.
 - The table of vocabulary should only have the following columns: Japanese, Romaji, English.
 - Do not provide particles in the vocabulary table, the student needs to figure out the correct particle to use.
+- Ensure there are no repeats, e.g., if miru verb is repeated twice, show it only once.
+- if there is more than one version of a word, show the most common example.
 
 ### Sentence Structure:
 - Do not provide particles in the sentence structure.
