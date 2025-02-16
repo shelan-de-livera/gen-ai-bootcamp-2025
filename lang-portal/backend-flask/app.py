@@ -3,6 +3,7 @@ from flask_cors import CORS
 
 from lib.db import Db
 
+import routes.home 
 import routes.words
 import routes.groups
 import routes.study_sessions
@@ -46,7 +47,15 @@ def create_app(test_config=None):
     
     # In development, add localhost to allowed origins
     if app.debug:
-        allowed_origins.extend(["http://localhost:8080", "http://127.0.0.1:8080"])
+        app.config.update(
+            SERVER_NAME=None,
+            APPLICATION_ROOT=None,
+            PREFERRED_URL_SCHEME='http'
+        )
+    else:
+        # Production configuration
+        app.config.from_pyfile('config/production.py')
+        # allowed_origins.extend(["http://localhost:8080", "http://127.0.0.1:8080"])
     
     # Configure CORS with combined origins
     CORS(app, resources={
@@ -63,6 +72,7 @@ def create_app(test_config=None):
         app.db.close()
 
     # load routes -----------
+    routes.home.load(app) 
     routes.words.load(app)
     routes.groups.load(app)
     routes.study_sessions.load(app)
